@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+
+    <title>Ta Te Ti</title>
+</head>
+
+<body>
+
+    <div id="selectorParent">
+        <div class="home-box">
+            <div class="home">
+                <div class="home-text">
+                    <h2>Ta Te Ti</h2>
+                    <h4>By Victoria Serra</h4>
+                </div>
+                <div class="home-input">
+                    <div class="input-box">
+                        <h4>Players Names:</h4>
+                        <input id="player1" type="text" required>
+                        <input id="player2" type="text" required>
+                    </div>
+                    <div id="start" class="start-box">
+                        <button id="start" class="start-game">Start</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="in-game" class="game">
+
+        <h1 class="title-game">Ta Te Ti</h1>
+
+        <div id="turn" class="turn-text">
+            <h2 id="p1" class="player">Player 1: <span id="indicator-p1"></span></h2>
+            <h2 id="p2" class="player">Player 2: <span id="indicator-p2"></span></h2>
+        </div>
+        <div id="board" class="container-box"></div>
+        <div id="surrender" class="surrender-box">
+            <button id="surrender" class="surrender-button">Surrender</button>
+        </div>
+        <div id="restart-box" class="restart-box">
+            <button id="restart" class="restart-button">Restart</button>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

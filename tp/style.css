@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Abril Fatface', cursive;
+
+}
+
+body {
+    background-color: #f4e1c3;
+}
+
+.home-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 680px;
+    align-items: center;
+}
+
+.home {
+    width: 370px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 370px;
+    background-color: rgb(197, 104, 45);
+    border-radius: 10px;
+    box-shadow: rgb(249, 237, 220) 0px 0px 0px 10px, rgb(253, 189, 93) 0px 0px 0px 20px, rgb(243, 107, 43) 0px 0px 0px 30px
+}
+
+.home-text {
+    color: rgb(249, 237, 220);
+    font-size: 20px;
+    height: 150px;
+    line-height: 50px;
+    text-align: center;
+
+}
+
+.home-input {
+    height: 185px;
+    justify-content: center;
+    align-content: center;
+}
+
+.start-box{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-game {
+    width: 150px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(253, 189, 93);
+    border-radius: 10px;
+    color: rgb(243, 107, 43);
+    border: none;
+    padding-bottom: 3px;
+}
+
+.start-game:hover {
+    color: #f4e1c3;
+    background-color: rgb(243, 107, 43);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+input:invalid {
+    background-color: rgba(255, 0, 0, 0.508);
+}
+
+.board-style {
+    margin: 0 auto;
+}
+
+.table {
+    border: 1px solid #aaa;
+    cursor: pointer;
+    float: left;
+    font-size: 6em;
+    line-height: 2em;
+    height: 200px;
+    margin: -1px 0 0 -1px;
+    text-align: center;
+    width: 200px;
+}
+
+.player {
+    color: blue;
+}
+
+.player-turn {
+    color: rgb(243, 107, 43);
+}
+
+.table::after {
+    display: block;
+}
+
+.game {
+    display: none;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    height: 680px;
+}
+
+
+.container-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    align-items: center;
+}
+
+.container {
+    background: rgb(254, 198, 114);
+    border-radius: 15px;
+    overflow: hidden;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    box-shadow: rgb(249, 237, 220) 0px 0px 0px 6px, rgb(243, 107, 43) 0px 0px 0px 12px, rgb(197, 104, 45) 0px 0px 0px 18px;
+
+}
+
+.block {
+    font-size: 100px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background: rgb(255, 182, 73);
+    color: rgb(249, 237, 220);
+    float: left;
+    padding-top: 5px;
+    line-height: 90px;
+    user-select: none;
+    border-radius: 10px;
+}
+
+.block:hover {
+    background: rgb(253, 173, 53);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.block-2 {
+    font-size: 100px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background: rgb(253, 173, 53);
+    color: rgb(249, 237, 220);
+    float: left;
+    padding-top: 5px;
+    line-height: 90px;
+    user-select: none;
+    border-radius: 10px;
+    border: rgb(75, 168, 180) 2px;
+}
+
+.end-game-container {
+    background: rgb(254, 198, 114);
+    border-radius: 20px;
+    overflow: hidden;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    box-shadow: rgb(249, 237, 220) 0px 0px 0px 6px, rgb(243, 107, 43) 0px 0px 0px 12px, rgb(197, 104, 45) 0px 0px 0px 18px;
+
+}
+
+.surrender-box {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.surrender-button {
+    width: 150px;
+    height: 25px;
+    background-color: rgb(197, 104, 45);
+    border-radius: 10px;
+    color: #f4e1c3;
+    text-align: center;
+    justify-content: center;
+    border: none;
+    padding-bottom: 3px;
+
+}
+
+.surrender-button:hover {
+    background-color: rgb(243, 107, 43);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.restart-box {
+    height: 80px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.restart-button {
+    width: 150px;
+    height: 25px;
+    background-color: rgb(197, 104, 45);
+    border-radius: 10px;
+    color: #f4e1c3;
+    text-align: center;
+    justify-content: center;
+    border: none;
+    padding-bottom: 3px;
+
+}
+
+.restart-button:hover {
+    background-color: rgb(243, 107, 43);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
